@@ -2,6 +2,7 @@
   --primary_color: #2196f3;
   --accent_color: #6ec6ff;
   --dark_color: #0069c0;
+  --grey:#505050;
 }
 body {
   color: white;
@@ -14,6 +15,9 @@ body {
   scrollbar-width: 5px;
   scrollbar-color: white transparent;
 }
+p{
+  margin: 0px;
+}
 canvas {
   display: block;
   width: 100%;
@@ -25,28 +29,17 @@ canvas {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }
-
 .main::-webkit-scrollbar {
-  width: 5px;
-}
-
-.main::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.main::-webkit-scrollbar-thumb {
-  background: white;
-  margin-right: 5px;
-}
-
-.main::-webkit-scrollbar-thumb:hover {
-  background: var(--primary_color);
+  display: none;
 }
 
 .navbar.transparent.navbar-inverse .navbar-inner {
   background: rgba(0,0,0,0.4);
 }
+
 
 /* ============================================================================================== */
 /* hero */
@@ -54,21 +47,85 @@ canvas {
   margin-left: auto;
   margin-right: auto;
   width: auto;
-  height: 80vh;
+  height: 90vh;
+  padding-top: 30vh;
 }
-.hero h1{
-  margin-top: auto;
-  margin-bottom: auto;
- 
+
+.hero{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 85vh;
+  padding-top: 30vh;
 }
+
 /* ============================================================================================== */
 /* about */
 .about{
   color: black;
   background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
+  padding-left: 10%;
+  padding-right:  10%;
   width: auto;
-  height: 90vh;
+  text-align: justify;
+  padding-bottom: 150px;
 }
+
+.scroll_down{
+  text-align: center;
+  height: 15vh;
+}
+
+
+.photo{
+  display: block;
+}
+
+.photo img{
+  width: 100%;
+  filter: grayscale(100%) contrast(120%);
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.photo:hover img{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+  filter: none;
+  scale:1.2;
+}
+
+.photo .glow-wrap{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.photo .glow{
+  display: block;
+  position:absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap{
+  margin-top: 0;
+  scale:1.2;
+}
+
+
