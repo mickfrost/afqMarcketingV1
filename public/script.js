@@ -400,6 +400,7 @@ class Slider {
   }
 
   listeners() {
+    window.addEventListener("click", this.nextSlide, { passive: true });
     window.addEventListener("wheel", this.nextSlide, { passive: true });
   }
 
