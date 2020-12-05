@@ -2,43 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link href="./css/wwo.scss" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CodePen - Fashion concept</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- partial:index.partial.html -->
     <nav class="nav nav--left js-nav">
       <ul>
         <li>
-          <a href="#"><span>Mens</span></a>
+          <a href="#" class="is-active"><span>Home</span></a>
         </li>
         <li>
-          <a href="#"><span>Womens</span></a>
+          <a href="#"><span>AFQ</span></a>
         </li>
         <li>
-          <a href="#" class="is-active"><span>Collections</span></a>
+          <a href="#"><span>Whtat We Offer</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Portfolio</span></a>
         </li>
       </ul>
     </nav>
 
     <figure class="logo">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/logo_copy_copy.svg"
-      />
+      <img src="./img/AFQ-Marketing-Logo-White.png" />
     </figure>
 
     <nav class="nav nav--right">
       <ul>
         <li>
           <a href="https://twitter.com/Jesper_Landberg?lang=en" target="_blank"
-            ><span>Say hi</span></a
+            ><span>Hello</span></a
           >
-        </li>
-        <li>
-          <a href="#">
-            <span>Cart</span>
-            <div class="cart-total">0</div>
-          </a>
         </li>
       </ul>
     </nav>
@@ -47,7 +46,7 @@
       <div class="slider__inner js-slider__inner"></div>
 
       <div class="slide js-slide">
-        <div class="slide__content">
+        <!-- <div class="slide__content">
           <figure class="slide__img js-slide__img">
             <img
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo1.jpg"
@@ -58,51 +57,63 @@
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg"
             />
           </figure>
-        </div>
+        </div> -->
 
         <div class="slider__text js-slider__text">
           <div class="slider__text-line js-slider__text-line">
-            <div>Black is</div>
+            <div>GENIUS</div>
           </div>
           <div class="slider__text-line js-slider__text-line">
-            <div>timeless. Black is</div>
-          </div>
-          <div class="slider__text-line js-slider__text-line">
-            <div>the colour of</div>
-          </div>
-          <div class="slider__text-line js-slider__text-line">
-            <div>Eternity.</div>
+            <div><b class="slider__text__bold">BOK</b>OFY</div>
           </div>
         </div>
       </div>
 
       <div class="slide js-slide">
-        <div class="slide__content">
+        <!-- <div class="slide__content">
           <figure class="slide__img js-slide__img">
             <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo3.jpg"
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo1.jpg"
             />
           </figure>
           <figure class="slide__img js-slide__img">
             <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo4.jpg"
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg"
             />
           </figure>
+        </div> -->
+
+        <div class="slider__text js-slider__text">
+          <div class="slider__text-line js-slider__text-line">
+            <div>MOSAIC</div>
+          </div>
+          <div class="slider__text-line js-slider__text-line">
+            <div><b class="slider__text__bold">RECOR</b>DING</div>
+          </div>
         </div>
       </div>
 
       <div class="slide js-slide">
-        <div class="slide__content">
+        <!-- <div class="slide__content">
           <figure class="slide__img js-slide__img">
             <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo5.jpg"
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo1.jpg"
             />
           </figure>
           <figure class="slide__img js-slide__img">
             <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo6.jpg"
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg"
             />
           </figure>
+        </div> -->
+
+        <div class="slider__text js-slider__text">
+          <div class="slider__text-line js-slider__text-line">
+            <div>MUSEO</div>
+          </div>
+          <div class="slider__text-line js-slider__text-line">
+            <div><b class="slider__text__bold">CODE</b>NGA</div>
+          </div>
         </div>
       </div>
 
@@ -126,11 +137,13 @@
 
     <div class="vert-text">
       <span>
-        Wings+Horns<br />
-        X Kyoto Black
+        <a href="https://www.facebook.com/afqmarketinginc/">FACEBOOK</a><br />
+        <a href="https://www.instagram.com/afqmarketing/?hl=en">INSTAGRAM</a>
       </span>
     </div>
-
-    <script src="./js/wwo.js"></script>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
